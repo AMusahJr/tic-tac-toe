@@ -1,8 +1,16 @@
-// gui.h
 #ifndef GUI_H
 #define GUI_H
 
-void initializeGUI();
+#include <SDL2/SDL.h>
+#include "board.h"
+
+#define WINDOW_TITLE "Tic Tac Toe"
+
+extern SDL_Window *window;
+extern SDL_Renderer *renderer;
+
+int initializeGUI();
 void closeGUI();
 
-#endif
+#endif // GUI_H
+

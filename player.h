@@ -4,9 +4,9 @@
 
 typedef struct {
     char symbol;
-    int row, col;
 } Player;
 
-void playerTurn(void* arg);
+void playerTurn(Player *player);
 
-#endif
+#endif // PLAYER_H
+
